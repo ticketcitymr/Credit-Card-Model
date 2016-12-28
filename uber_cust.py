@@ -8,6 +8,7 @@
 #          | 01192016  | Ivana D.  | Credit Card model,code, ref lists, etc...
 #	 01202016  | Jeff K.   | Comments, ref lists, etc...
 #	 01202016  | Justin S   | SSN distinct list
+#	 28Dec2016 | Mike R    | Changed Credit card number syntax line ~310
 #-----------------------------------------------------------------------------*/
 #Reference data is located on the test-bmohb console gs://newccdatav3
 
