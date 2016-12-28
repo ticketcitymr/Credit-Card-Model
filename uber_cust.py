@@ -308,7 +308,7 @@ with open('uber_cust.csv','w') as f1:
 			mdl.insert(No_CCs,'')
 		#Sets CC_NO to a random credit card number
 		# deprecated by BARNUMCC_NO=gen_data.cc_number()
-		CC_NO=gen_datacreate_cc_number
+		CC_NO=gen_data.create_cc_number()
 		#Extract CC_Number from the tuple returned by CC_Number...Tuple contains CC Number and Type
 		#while CC_list.count(CC_NO[1][0]) > 0:
 		CC_TRANS=CC_NO[1][0]
