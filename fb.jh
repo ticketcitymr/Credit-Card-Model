@@ -124,25 +124,25 @@ Benefactor_Account_Type_CD	String	required
 }
 
 relationship OneToMany {
-	Transactions_Types{Tranx_Type_CD} to  Trans8Mar
+	Transactions_Types{Tranx_Type_CD} to  Trans8Mar{txn_type_cd}
 }
 relationship OneToMany {
-	Account_Type{Account_Type_CD} to  Account
+	Account_Type{Account_Type_CD} to  Account{Account_Type_CD}
 }
 relationship OneToMany {
-	Customer{customer_id} to  Customer_Activity
-}
-relationship OneToMany {
-	Customer{customer_id} to  Password
+	Customer{cust_id} to  Customer_Activity{customer_id}
 }
 relationship OneToOne {
-	Account{Account_ID} to  Customer
+	Customer{Cust_ID} to Password{Cutomer_ID}
+}
+relationship ManyToOne {
+	Account{Account_ID} to  Customer{Account_ID}
 }
 relationship OneToMany {
-	Account{Account_ID} to  Trans8Mar
+	Account{Account_ID} to  Trans8Mar{Account_ID}
 }
 relationship OneToMany {
-	Customer{cust_id} to  Trans8Mar
+	Customer{cust_id} to  Trans8Mar{Customer_ID}
 }
 
 
